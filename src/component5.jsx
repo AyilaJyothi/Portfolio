@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./component5.module.css";
 // import profileImage from "../src/assets/image2.png"; 
-import BusImage from "../src/assets/Busimage.jpg";
+import BusImage from "../src/assets/busimage.jpg";
 import SpaceImage from "../src/assets/Spaceimage.jpg";
 import lead from "../src/assets/leader.webp";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
