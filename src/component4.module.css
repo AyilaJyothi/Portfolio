@@ -1,0 +1,106 @@
+.skillsSection {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px; /* Reducing space for better alignment */
+    max-width: 1000px;
+    margin: auto;
+}
+
+.skillsColumn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Less space between skill boxes */
+    min-width: 45%;
+}
+
+.skillBox {
+    display: flex;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.skillBox:hover {
+    background: #e9ecef;
+    transform: scale(1.03);
+}
+
+.icon {
+    font-size: 30px; /* Reduced icon size */
+    margin-right: 15px;
+    color: #007bff;
+}
+
+.skillDetails {
+    text-align: left; /* Align text to the left */
+}
+
+.skillDetails h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.skillDetails p {
+    margin: 3px 0 0;
+    font-size: 14px; /* Smaller font size */
+    color: gray;
+}
+
+/* Responsive Styling */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .skillsColumn {
+        min-width: 48%;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column; /* Stack skills on smaller screens */
+        align-items: center;
+    }
+
+    .skillsColumn {
+        min-width: 90%;
+    }
+
+    .skillBox {
+        padding: 12px;
+    }
+
+    .icon {
+        font-size: 28px;
+        margin-right: 12px;
+    }
+
+    .skillDetails h3 {
+        font-size: 16px;
+    }
+
+    .skillDetails p {
+        font-size: 13px;
+    }
+}

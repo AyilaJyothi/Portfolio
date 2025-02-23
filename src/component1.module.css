@@ -1,0 +1,91 @@
+/* Ensure no horizontal overflow */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: auto; /* Keep scrollbar visible but prevent unnecessary overflow */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px; /* Adjust padding to prevent content overflow */
+  background-color: #333;
+  color: white;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  white-space: nowrap; /* Prevent logo from breaking */
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  white-space: nowrap; /* Prevent text wrapping issues */
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .nav ul {
+    gap: 20px; /* Reduce gap for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background: #333;
+    flex-direction: column;
+    padding: 15px;
+    width: 100%;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav ul li {
+    text-align: center;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}

@@ -1,0 +1,185 @@
+
+.aboutSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 20px;
+    /* border: 2px solid black; */
+    width: 100%;
+    background-color: #d4d2d2;
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    /* border:  2px solid black; */
+}
+
+/* Left Side: About Me */
+.aboutText {
+    flex: 1;
+    max-width: 45%;
+}
+
+.aboutText h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.aboutText h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.highlight {
+    color: #0073e6;
+}
+
+.aboutText p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.primaryBtn,
+.secondaryBtn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 6px;
+    transition: 0.3s ease-in-out;
+}
+
+.primaryBtn {
+    background-color: #0073e6;
+    color: white;
+    border: none;
+}
+
+.primaryBtn:hover {
+    background-color: #005bb5;
+}
+
+.secondaryBtn {
+    background-color: transparent;
+    color: #0073e6;
+    border: 2px solid #0073e6;
+}
+
+.secondaryBtn:hover {
+    background-color: #0073e6;
+    color: white;
+}
+
+/* Right Side: Info Boxes */
+.infoBoxes {
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 20px;
+}
+
+/* Rows */
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Individual Boxes */
+.box {
+    width: 30px;
+    border: 2px solid rgb(246, 246, 246);
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #0073e6;
+}
+
+.box h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.box p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .aboutText {
+        max-width: 100%;
+    }
+
+    .infoBoxes {
+        max-width: 100%;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .box {
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; /* Center buttons */
+        display: flex;
+        gap: 12px; /* Add some gap between buttons */
+        margin-bottom: 20px; /* Extra spacing below */
+    }
+    .aboutSection{
+        width: 100%;
+    }
+}
+
+@media (max-width:428px) {
+    .aboutSection{
+        width: 100%;
+    }
+}

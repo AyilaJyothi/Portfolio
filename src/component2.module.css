@@ -1,0 +1,197 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.compoBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:auto;
+  width: 97.3%;
+  /* width: 90%; */
+  padding: 20px;
+  /* background-color: #0073e6; */
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 90%;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.textSection {
+  max-width: 500px;
+}
+
+.textSection h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.textSection h1 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.highlight {
+  color: #0073e6;
+}
+
+.subText {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* Button Styling */
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid black;
+  padding: 6px 14px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  background-color: white;
+  color: black;
+}
+
+.button:hover {
+  background-color: #f1f1f1;
+}
+
+.button svg {
+  font-size: 18px;
+}
+
+.secondaryButton {
+  color: black;
+}
+
+.imageSection {
+  max-width: 45%;
+}
+
+.profileImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* ========== RESPONSIVE STYLES ========== */
+
+/* Medium Screens (Tablets) */
+@media (max-width: 1024px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .textSection {
+    max-width: 80%;
+  }
+
+  .imageSection {
+    max-width: 70%;
+    margin-top: 20px;
+  }
+  .buttons {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+/* Small Screens (Phones) */
+@media (max-width: 768px) {
+  .compoBody {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .textSection h1 {
+    font-size: 32px;
+  }
+
+  .subText {
+    font-size: 16px;
+  }
+
+  .button {
+    font-size: 14px;
+    padding: 5px 12px;
+  }
+
+  .imageSection {
+    max-width: 90%;
+  }
+
+}
+@media (max-width:428px) {
+  .compoBody{
+    width: 100%;
+  }
+  
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.iconButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid black;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  background-color: white;
+  color: black;
+}
+
+.iconButton:hover {
+  background-color: #f1f1f1;
+}
+
+.iconButton svg {
+  font-size: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .iconButton {
+    font-size: 14px;
+    padding: 6px 14px;
+  }
+
+  .iconButton svg {
+    font-size: 18px;
+  }
+}
+
