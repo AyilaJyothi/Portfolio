@@ -22,7 +22,7 @@ const AboutMe = () => {
           </p>
           <div className={styles.buttons}>
             <a
-              href="https://drive.google.com/file/d/1IPL_Fmq3E2vwB6QKE5f3lEp7DaZUSgVu/view?usp=sharing"
+              href="https://drive.google.com/file/d/1m-MZ-2x0guDOS3ET6vI7EdD_aQQ6ZPw6/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.primaryBtn}
