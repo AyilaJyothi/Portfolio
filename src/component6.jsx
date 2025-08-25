@@ -6,6 +6,9 @@ import rhcsa from "../src/assets/rhcsa.png";
 import oracle from "../src/assets/oracle.png";
 import python from "../src/assets/python.png";
 import linux from "../src/assets/linux.png";
+import csa from "../src/assets/servicecsa.png";
+import cad from "../src/assets/servicecad.png";
+
 
 const certificates = [
   { id: 1, title: "C", img: cisco, description: "22 Jan 2023" },
@@ -14,6 +17,9 @@ const certificates = [
   { id: 4, title: "JAVA Foundations", img: oracle, description: "19 Nov 2023" },
   { id: 5, title: "Python", img: python, description: "3 May 2023" },
   { id: 6, title: "NDG Linux Unhatched", img: linux, description: "20 Aug 2023" },
+  { id: 7, title: "CSA", img: csa, description: "19 Nov 2023" },
+  { id: 8, title: "CAD", img: cad, description: "3 May 2023" },
+
 ];
 
 const CertificatesPage = () => {
