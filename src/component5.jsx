@@ -4,6 +4,7 @@ import styles from "./component5.module.css";
 import BusImage from "../src/assets/busimage.jpg";
 import SpaceImage from "../src/assets/spaceimage.jpg";
 import lead from "../src/assets/leader.webp";
+import UConnect from "../src/assets/Uconnect.jpg";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const projects = [
@@ -24,9 +25,16 @@ const projects = [
   {
     title: "LeaderBoard",
     image:  lead,
-    description: "Built a Leaderboard for Top Coders with campus-wise filtering across three campuses. Enabled real-time rankings to enhance competitive coding culture.",
+    description: "Built a Leaderboard for Top Coders filtering across three campuses. Enabled real-time rankings to enhance competitive coding culture.",
     github: "#",
     live: "#",
+  },
+    {
+    title: "UConnect",
+    image:  UConnect,
+    description: "Developed UConnect, a digital platform enabling students to register for clubs, chat, collaborate, and engage with communities seamlessly.",
+    github: "#",
+    live: "https://uconnectwebsite.onrender.com",
   },
 ];
 
